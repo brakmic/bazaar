@@ -5,4 +5,4 @@ My scratchpad project
 
 ### License 
 
-MIT
+<a href="https://github.com/brakmic/brakmic/blob/master/LICENSE">MIT</a>
