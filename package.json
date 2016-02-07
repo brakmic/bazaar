@@ -1,0 +1,25 @@
+{
+  "name": "brakmic",
+  "version": "0.1.0",
+  "description": "a brakmic project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brakmic/brakmic.git"
+  },
+  "keywords": [
+    "harris",
+    "brakmic",
+    "web",
+    "project"
+  ],
+  "author": "Harris Brakmic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brakmic/brakmic/issues"
+  },
+  "homepage": "https://github.com/brakmic/brakmic#readme"
+}
