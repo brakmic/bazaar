@@ -60,5 +60,9 @@ In the end you should see a result like this:
 
 <img src="http://fs5.directupload.net/images/160315/c9zz6uzh.png"/>
 
+Depending on your currently active Build-Config the binaries will either be located under **bin\Debug** or **bin\Release**
+
+<img src="http://fs5.directupload.net/images/160315/axm92wyp.png"/>
+
 Have fun with WebAssembly :smile:
 
