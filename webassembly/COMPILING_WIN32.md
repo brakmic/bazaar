@@ -64,5 +64,5 @@ Depending on your currently active Build-Config the binaries will either be loca
 
 <img src="http://fs5.directupload.net/images/160315/axm92wyp.png"/>
 
-Have fun with WebAssembly :smile:
+Have fun with WebAssembly! :smile:
 
