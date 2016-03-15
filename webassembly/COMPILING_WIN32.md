@@ -1,16 +1,16 @@
 ### Compiling the Binaryen Toolchain under Windows with Visual Studio 2015
 
-This is a short tutorial showing how to configure projects and solution files needed to successfully compile Binaryen
+This is a short tutorial showing how to configure projects and solution files needed to successfully compile <a href="https://github.com/WebAssembly/binaryen">Binaryen</a>
 
 with Visual Studio 2015.
 
 #### Prerequisites
 
-Visual Studio 2015 (Community Edition should be fine)
+<a href="https://www.visualstudio.com/en-US/downloads/download-visual-studio-vs.aspx">Visual Studio 2015</a> (Community Edition should be fine)
 
-CMake (version used here is v.3.4.1)
+<a href="https://cmake.org/">CMake</a> (version used here is v.3.4.1)
 
-Git tools
+<a href="https://git-scm.com/download/win">Git tools</a>
 
 #### Creating configurations and project files with CMake
 
