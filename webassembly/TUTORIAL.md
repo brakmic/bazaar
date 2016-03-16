@@ -1,10 +1,10 @@
 ### Compiling *wasmt* to asm.js & running it in a browser
 
-#### Prerequisites
+##### Prerequisites
 
 Compile a working <a href="http://webassembly.github.io/">WebAssembly</a> toolchain as described <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/COMPILING_WIN32.md">here</a>.
 
-#### Writing an *asmt* source file
+##### Writing an *asmt* source file
 
 The WebAssembly Spec defines binary *wasm* and human-readable *wasmt* files. We will write a simple *echo* function that
 
