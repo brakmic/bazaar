@@ -2,7 +2,7 @@
 
 This is a short tutorial showing how to configure projects and solution files needed to successfully compile <a href="https://github.com/WebAssembly/binaryen">Binaryen</a> with Visual Studio 2015.
 
-There's also a <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/TUTORIAL.md">short intro</a> about compiling wasm-files to asm.js and executing them in a browser.
+For compiling WebAssembly files to *asm.js* and running them in a Browser visit this <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/TUTORIAL.md">short intro</a>.
 
 #### Prerequisites
 
