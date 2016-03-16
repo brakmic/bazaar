@@ -1,4 +1,4 @@
-### Compiling a simple *wasmt* to asm.js an run it in a browser
+### Compiling *wasmt* to asm.js & running it in a browser
 
 #### Prerequisites
 
