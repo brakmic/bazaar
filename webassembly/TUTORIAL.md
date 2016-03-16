@@ -6,13 +6,10 @@ Compile a working <a href="http://webassembly.github.io/">WebAssembly</a> toolch
 
 ##### Writing an *asmt* source file
 
-The WebAssembly Spec defines binary *wasm* and human-readable *wasmt* files. We will write a simple *echo* function that
+The WebAssembly Spec defines binary *wasm* and human-readable *wasmt* files. We will write a simple *echo* function that takes a single int32 value and returns it back to the caller.
+Of course, there are many other and much better examples, so you may want to look for <a href="https://github.com/WebAssembly/spec/tree/master/ml-proto/test">more complex examples</a>.
 
-takes a single int32 value and returns it back to the caller. Of course, there are many other and much better examples, so you
-
-may want to look for <a href="https://github.com/WebAssembly/spec/tree/master/ml-proto/test">more complex examples</a>.
-
-This is our source file written as a S-Expression <a href="https://github.com/WebAssembly/design/blob/master/AstSemantics.md">according to the Spec</a>.
+This is our source file written as an S-Expression <a href="https://github.com/WebAssembly/design/blob/master/AstSemantics.md">according to the Spec</a>.
 
 ```lisp
 (module
@@ -26,26 +23,22 @@ This is our source file written as a S-Expression <a href="https://github.com/We
 
 Experienced Lisp/Clojure devs should have no bigger problems with recognizig most important parts.
 
-We begin with *module* declaration and define a certain chunk of memory for future use. This is actually not really needed here as we're not
-
-doing anything extraordinary. It's jut to show how we can manage memory with wasm.
-
-Then we define a *function export* named *echo* that references the *$echo* function below.
+We begin our code with a *module* declaration and define a certain chunk of memory for future use. This is actually not really needed here as we're not doing anything extraordinary. It's here just to show how we can manage memory with *wasm*. Then we define a *function export* named *echo* that references the *$echo* function below.
 
 This function's definition is straightforward:
 
-- Use keyword *func* to mark the beginning of the function body
-- Give it a name with a $ prepended
-- Insert any parameters by using *param*, the name of the parameter, and its type
-- Complete the function signature by setting the *return value type* and its name [*I'm not using it here*]
+- Use keyword **func** to mark the beginning of the function body
+- Give it a name with a *$*-sign prepended
+- Insert any parameters by using **param**, the *name* of the parameter, and its **type**
+- Complete the function signature by setting the *return value type* and its name [*I'm not using it anywhere in the function*]
 
-Save the source to *echo.wasmt* and run the following tool from Binaryen's toolchain to compile it to an *asm.js* file.
+Save the source to **echo.wasmt** and run the following tool from <a href="https://github.com/WebAssembly/binaryen">Binaryen's toolchain</a> to compile it to an **asm.js**-compatible source.
 
 ```shell
 wasm2asm echo.wast -o echo.js
 ```
 
-This will create a new file *echo.js* that'll contain this code:
+This will create a new file *echo.js* containing this code:
 
 ```javascript
 function asmFunc(global, env, buffer) {
@@ -73,7 +66,7 @@ function asmFunc(global, env, buffer) {
 }
 ```
 
-Now create an *index.html* and point to this file by usign a *script* tag.
+Now create an *index.html* and point to this file by using a *script* tag.
 
 ```html
 <html>
@@ -89,5 +82,7 @@ Open it in the Browser and go to the Console.
 Type in the following to call the *echo* function.
 
 <img src="http://fs5.directupload.net/images/160316/yy67et7p.png"/>
+
+I know, it's not much and I know almost nothing about WebAssembly but there's always a *starting point*.
 
 Have fun with WebAssembly. :smile:
