@@ -46,7 +46,7 @@ After a few moments CMake will generate default compiler settings.
 
 <img src="http://fs5.directupload.net/images/160315/r4933m5j.png"/>
 
-Not click *Generate* to create Project and Solution files for VS2015.
+Now click *Generate* to create Project and Solution files for VS2015.
 
 Go to the build folder you set previously and double click the *binaryen.sln* to open it with VS2015.
 
