@@ -1,8 +1,10 @@
-### Compiling *wasmt* to asm.js & running it in a browser
+### Compiling *wasmt* to asm.js & running it in Chrome (Canary)
 
 ##### Prerequisites
 
 Compile a working <a href="http://webassembly.github.io/">WebAssembly</a> toolchain as described <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/COMPILING_WIN32.md">here</a>.
+Download a version of Chrome that supports WebAssembly. Currently only Chrome Canary supports WebAssembly.
+Enable WebAssembly by navigating to chrome://flags/ and search list of flags for WebAssembly flag and enable it.
 
 ##### Writing an *asmt* source file
 
