@@ -4,6 +4,12 @@
 
 Compile a working <a href="http://webassembly.github.io/">WebAssembly</a> toolchain as described <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/COMPILING_WIN32.md">here</a>.
 
+Currently, WebAssembly only runs in Chrome Canary, Firefox Nightly and a preview version of Microsoft Edge. More detailed info can be found [here](http://webassembly.github.io/demo/).
+
+For Chrome Canary activate the WebAssembly flags via **chrome://flags/#enable-webassembly**
+
+For Firefox Nightly use **about:config** and set **javascript.options.wasm** to **true**.
+
 ##### Writing an *asmt* source file
 
 The WebAssembly Spec defines binary *wasm* and human-readable *wasmt* files. We will write a simple *echo* function that takes a single int32 value and returns it back to the caller.
