@@ -1,24 +1,49 @@
 ### Compiling the Binaryen Toolchain under Windows with Visual Studio 2015
 
-This is a short tutorial showing how to configure projects and solution files needed to successfully compile <a href="https://github.com/WebAssembly/binaryen">Binaryen</a> with Visual Studio 2015.
+This is a short tutorial showing how to configure projects and solution files needed to successfully compile <a href="https://github.com/WebAssembly/binaryen">Binaryen</a> with Visual C++ Build Tools or Visual Studio 2015.
 
 For compiling WebAssembly files to *asm.js* and running them in a browser visit this <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/TUTORIAL.md">short intro</a>.
 
 #### Prerequisites
 
-<a href="https://www.visualstudio.com/en-US/downloads/download-visual-studio-vs.aspx">Visual Studio 2015</a> (Community Edition should be fine)
+* [Option 1] [Visual C++ Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126) (using the **Default** Install option)
 
-<a href="https://cmake.org/">CMake</a> (version used here is v.3.4.1)
+* [Option 2] [Visual Studio 2015](https://www.visualstudio.com/en-US/downloads/download-visual-studio-vs.aspx) (Community Edition should be fine)
 
-<a href="https://git-scm.com/download/win">Git tools</a>
+* [CMake](https://cmake.org/) (version used here is v.3.4.1)
+
+* [https://git-scm.com/download/win](Git tools)
 
 #### Creating configurations and project files with CMake
 
-First clone the latest sources of Binaryen to your local system
+### Using Command Line:
 
+First, make sure you have `git`, `cmake` and `msbuild` (v14.0, check with `msbuild /version`) in PATH.
+
+Then clone the latest sources of Binaryen to your local system using Command Prompt or PowerShell:
+
+```cmd
+git clone https://github.com/WebAssembly/binaryen.git --recursive
 ```
-git clone https://github.com/WebAssembly/binaryen.git
+
+Build binaryen:
+
+```cmd
+cd binaryen
+
+cmake .
+
+cmake --build . --config Release
 ```
+
+That's it! The compiled executables will be produced in `bin` directory.
+
+Note: after running `cmake .`, you will also find the binaryen.sln, which you can:
+
+* Open with Visual Studio.
+* or build with `msbuild binaryen.sln /p:Configuration=Release`
+
+### GUI approach:
 
 Open CMake-GUI from its installation folder.
 
