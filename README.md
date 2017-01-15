@@ -1,6 +1,6 @@
 ### Brakmic
 
-My scratchpad project
+My weakly sorted [project vault](http://blog.brakmic.com)
 
 
 ### License 
