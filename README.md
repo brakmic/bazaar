@@ -1,5 +1,3 @@
-### Brakmic
-
 My weakly sorted [project vault](http://blog.brakmic.com)
 
 
