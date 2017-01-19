@@ -49,7 +49,7 @@ Now try to call your perl6 by typing in:
 
 > perl6 -v   
 
-Now your should see an output like this:
+Your should see an output like this:
 
 `This is Rakudo version 2016.12-393-ged482ec9b built on MoarVM version 2016.12-113-gd1da1bac
 implementing Perl 6.c.`
