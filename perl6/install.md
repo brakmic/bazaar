@@ -69,7 +69,9 @@ And again, wait for a while...then
 
 > panda -v  # you should now get a longer output describing panda's functions.
 
-You can now install Perl6 modules! :smile:
+Congratulations! 
+
+You can now use Perl6 and install modules too! :smile:
 
 **Hint**: If some module installations break because of failing tests you can try to install them by using the *--notest* option.
 
