@@ -5,14 +5,15 @@
 * Visual Studio 2015 (the free [Community Edition](https://go.microsoft.com/fwlink/?LinkId=691978&clcid=0x409) is just fine)
 * Perl 5 must be installed (I'd recommend [Strawberry Perl](http://strawberryperl.com/))
 * You must have GIT.
-* Open a CMD that contains paths to your Visual C++ toolchain. 
+
+# Step 1: [Perl6 source code + configuration]
+----------------------------------------------
+
+Open a CMD that contains paths to your Visual C++ toolchain. 
 
 *The easiest way is by using the CMD-Shell from 'Visual Studio Tools' as it automatically calls "vcvarsall.bat" that sets up the complete build environment.*
 
 <img src="https://i.imgsafe.org/10d93ac241.png">
-
-# Step 1: [Perl6 source code + configuration]
-----------------------------------------------
 
 In CMD type in:
 
