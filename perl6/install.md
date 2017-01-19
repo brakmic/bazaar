@@ -3,8 +3,8 @@
 ### Prerequisites
 ---------------
 * Visual Studio 2015 (the free [Community Edition](https://go.microsoft.com/fwlink/?LinkId=691978&clcid=0x409) is just fine)
-* Perl 5 must be installed (I'd recommend [Strawberry Perl](http://strawberryperl.com/))
-* You must have GIT.
+* Perl 5 must be installed (I'd recommend [Strawberry Perl](http://strawberryperl.com/) or via VS2015 Install)
+* You must have GIT (either installed separately or via VS2015 Install).
 
 Step 1: [Perl6 source code + configuration]
 ----------------------------------------------
@@ -54,8 +54,8 @@ Your should see an output like this:
 `This is Rakudo version 2016.12-393-ged482ec9b built on MoarVM version 2016.12-113-gd1da1bac
 implementing Perl 6.c.`
 
-Step 4: [Installing Panda, Perl6's Module Manager]
----------------------------------------------------
+Step 4 (Optional): [Installing Panda, Perl6's Module Manager]
+-------------------------------------------------------------
 
 > git clone --recursive git://github.com/tadzik/panda.git
 
@@ -69,10 +69,26 @@ And again, wait for a while...then
 
 > panda -v  # you should now get a longer output describing panda's functions.
 
-Congratulations! 
+Step 5 (Optional): [Installing Zef, Perl6' Module Manager]
+-----------------------------------------------------------
+
+> git clone https://github.com/ugexe/zef.git
+
+> cd zef
+
+> perl6 -Ilib bin/zef install .
+
+A few moments later ZEF will be installed in your *PERL6_ROOT\share\perl6\site\bin*.
+
+Now it's time to learn about [zef's capabilities](https://github.com/ugexe/zef).
+
+
+## Congratulations! 
 
 You can now use Perl6 and install modules too! :smile:
 
 **Hint**: If some module installations break because of failing tests you can try to install them by using the *--notest* option.
+
+**Update Info**: Thanks to [@sinan_unur](https://twitter.com/sinan_unur) for valuable [comments](https://news.ycombinator.com/item?id=13438908) regarding Git/Perl56 installation and ZEF module manager.
 
 Have fun!
