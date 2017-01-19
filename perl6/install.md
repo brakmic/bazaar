@@ -6,7 +6,7 @@
 * Perl 5 must be installed (I'd recommend [Strawberry Perl](http://strawberryperl.com/))
 * You must have GIT.
 
-# Step 1: [Perl6 source code + configuration]
+Step 1: [Perl6 source code + configuration]
 ----------------------------------------------
 
 Open a CMD that contains paths to your Visual C++ toolchain. 
