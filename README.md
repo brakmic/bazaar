@@ -1,4 +1,4 @@
-My weakly sorted [project vault](http://blog.brakmic.com)
+My [blog](http://blog.brakmic.com)
 
 
 ### License 
